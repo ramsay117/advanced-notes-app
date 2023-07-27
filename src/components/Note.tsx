@@ -1,6 +1,14 @@
 import { useNavigate, useOutletContext } from 'react-router-dom';
 import { NoteLayoutOutletContext } from './NoteLayout';
-import { Box, Button, Chip, Grid, Link, Stack, Typography } from '@mui/material';
+import {
+  Box,
+  Button,
+  Chip,
+  Grid,
+  Link,
+  Stack,
+  Typography,
+} from '@mui/material';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { Link as ReactRouterLink } from 'react-router-dom';
@@ -20,7 +28,14 @@ function Note() {
   return (
     <Stack spacing={4} mt={4}>
       <Grid container justifyContent='space-between'>
-        <Grid item xs='auto' container spacing={1} direction='column'>
+        <Grid
+          item
+          xs='auto'
+          container
+          maxWidth='70%'
+          spacing={1}
+          direction='column'
+        >
           <Grid item>
             <Typography variant='h4'>{note.title}</Typography>
           </Grid>
@@ -36,7 +51,15 @@ function Note() {
             ))}
           </Grid>
         </Grid>
-        <Grid item xs={3} sm='auto' container spacing={1} alignItems='center' justifyContent='flex-end'>
+        <Grid
+          item
+          xs={3}
+          sm='auto'
+          container
+          spacing={1}
+          alignItems='center'
+          justifyContent='flex-end'
+        >
           <Grid item>
             <Link component={ReactRouterLink} to='edit'>
               <Button variant='contained' disableElevation>

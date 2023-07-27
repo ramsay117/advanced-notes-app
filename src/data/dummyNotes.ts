@@ -6,7 +6,7 @@ export const dummyTags = [
   { id: '7', label: 'Vacation' },
   { id: '11', label: 'Books' },
   { id: '12', label: 'Reading' },
-  { id: '13', label: 'Recommendations' },
+  { id: '13', label: 'Opinion' },
   { id: '14', label: 'Fitness' },
   { id: '15', label: 'Exercise' },
   { id: '17', label: 'Workout' },
@@ -26,7 +26,7 @@ export const dummyNotes = [
     body: '## Travel Plans\n\n🗺️ Exciting adventure awaits! Here are my upcoming travel plans:\n\n1. **Explore Japan** 🇯🇵\n   - Experience the beauty of cherry blossoms in Kyoto.\n   - Discover traditional temples and modern city life in Tokyo.\n\n2. **Visit Paris** 🇫🇷\n   - Admire the iconic Eiffel Tower and Louvre Museum.\n   - Stroll along the charming streets of Montmartre.\n\n3. **Go on a Safari in Africa** 🌍\n   - Witness incredible wildlife in the Serengeti National Park.\n   - Embark on a thrilling adventure in Kruger National Park.\n\n\n🧳 Pack your bags, get ready for amazing experiences, and create unforgettable memories! Bon voyage! ✈️🌟😎',
   },
   {
-    title: 'Book Recommendations',
+    title: 'Book Picks',
     tagIds: ['11', '12', '13'],
     body: '## Book Recommendations\n\nHere are some **amazing** books that you must read:\n\n1. *To Kill a Mockingbird* by Harper Lee\n   A powerful classic that explores themes of racial injustice and moral growth.\n\n2. **1984** by George Orwell\n   A dystopian novel that warns of the dangers of totalitarianism and surveillance.\n\n3. *The Great Gatsby* by F. Scott Fitzgerald\n   A captivating tale of love, wealth, and the American Dream.\n\n4. **Pride and Prejudice** by Jane Austen\n   A delightful romantic novel with witty social commentary.\n\n5. *The Catcher in the Rye* by J.D. Salinger\n   A coming-of-age story that captures the angst of adolescence.\n\n\n📚 Happy reading and enjoy these literary masterpieces! 📖🌟',
   },
