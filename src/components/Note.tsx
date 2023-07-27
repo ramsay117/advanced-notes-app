@@ -36,7 +36,7 @@ function Note() {
             ))}
           </Grid>
         </Grid>
-        <Grid item xs='auto' container spacing={1} alignItems='center'>
+        <Grid item xs={3} sm='auto' container spacing={1} alignItems='center' justifyContent='flex-end'>
           <Grid item>
             <Link component={ReactRouterLink} to='edit'>
               <Button variant='contained' disableElevation>

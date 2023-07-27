@@ -49,7 +49,7 @@ function NoteList() {
               </Link>
               <Button
                 variant='outlined'
-                color='secondary'
+                color='warning'
                 onClick={() => {
                   setEditTagsModalIsOpen(true);
                 }}
@@ -60,8 +60,8 @@ function NoteList() {
           </Grid>
         </Grid>
         <Grid container justifyContent='space-between'>
-          <Grid item xs={7} sm={5} md={4}>
-            <InputLabel htmlFor='title'>Title</InputLabel>
+          <Grid item xs={5}>
+            <InputLabel htmlFor='title'>Search</InputLabel>
             <TextField
               id='title'
               label=''
@@ -74,7 +74,7 @@ function NoteList() {
               }}
             />
           </Grid>
-          <Grid item xs={7} sm={5} md={4}>
+          <Grid item xs={5}>
             <InputLabel>Tags</InputLabel>
             <Select // same as CreateableReactSelect except NO onCreateOption
               isMulti
@@ -97,10 +97,10 @@ function NoteList() {
             ></Select>
           </Grid>
         </Grid>
-        <Grid container>
+        <Grid container justifyContent='center'>
           {filteredNotes.map((note) => {
             return (
-              <Grid item xs={7} sm={6} md={5} key={note.title} mr={3} mt={2}>
+              <Grid item xs={10} sm={6} md={5} key={note.title} mr={3} mt={2}>
                 <NoteCard
                   title={note.title}
                   tagIds={note.tagIds}
